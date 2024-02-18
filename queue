@@ -30,7 +30,7 @@ public class Main{
     	//Strings in default order
     	Queue<String> queue = new PriorityQueue<>();
     	
-    	//Strings in reverse order
+    	//Strings in reverse order // we used comparator here --> Collections.reverseOrder()
     	//Queue<String> queue = new PriorityQueue<>(Collections.reverseOrder());
     	
     	queue.offer("B");
