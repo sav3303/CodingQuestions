@@ -7,6 +7,13 @@
   
   //      enqueue = offer()
   //      dequeue = poll()
+
+	--
+
+		Head --> top of the element
+		Tail -- > Bottom of the element
+	
+	--
   
   // Where are queues useful?
   
