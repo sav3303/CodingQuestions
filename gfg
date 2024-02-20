@@ -31,3 +31,25 @@ class Solution {
         }
     }
 }
+
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    private static final int MOD = 1000000007;
+    private static final Map<Integer, Integer> memo = new HashMap<>();
+
+    static int nthFibonacci(int n) {
+        if (n == 0 || n == 1) return n;
+        
+        if (memo.containsKey(n)) {
+            return memo.get(n);
+        } else {
+            int fib = (nthFibonacci(n - 1) % MOD + nthFibonacci(n - 2) % MOD) % MOD;
+            memo.put(n, fib);
+            return fib;
+        }
+    }
+}
