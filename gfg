@@ -17,3 +17,17 @@ class Solution {
         return c;
     }
 }
+
+
+
+---+ Recursion ----
+
+class Solution {
+    static int nthFibonacci(int n){
+        int m = 1000000007;
+        if(n==0 || n==1) return n;
+        else {
+            return (nthFibonacci(n-1) % m + nthFibonacci(n-2) % m) % m;
+        }
+    }
+}
